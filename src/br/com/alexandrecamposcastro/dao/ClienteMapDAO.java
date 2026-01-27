@@ -1,18 +1,14 @@
-package br.com.cbritodev.dao;
-
-import br.com.cbritodev.domain.Cliente;
+package br.com.alexandrecamposcastro.dao;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author carlos.brito
- * Criado em: 19/06/2025
- */
+import br.com.alexandrecamposcastro.domain.Cliente;
+
 public class ClienteMapDAO implements IClienteDAO{
 
-    private Map<Long, Cliente> map;
+    private final Map<Long, Cliente> map;
 
     public ClienteMapDAO () {
         this.map = new HashMap<>();

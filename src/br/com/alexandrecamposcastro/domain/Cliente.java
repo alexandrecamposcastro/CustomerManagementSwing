@@ -1,11 +1,7 @@
-package br.com.cbritodev.domain;
+package br.com.alexandrecamposcastro.domain;
 
 import java.util.Objects;
 
-/**
- * @author carlos.brito
- * Criado em: 19/06/2025
- */
 public class Cliente {
 
     private String nome;
@@ -64,9 +60,11 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return String.format(
-                "Cliente: %s" + "\n"
-                        + "CPF: %d" + "\n" + "Telefone: %d" + "\n" + "Endereço: %s",
+        return String.format("""
+                             Cliente: %s
+                             CPF: %d
+                             Telefone: %d
+                             Endere\u00e7o: %s""",
                 nome, getCpf(), tel, getEndereco()
 
         );

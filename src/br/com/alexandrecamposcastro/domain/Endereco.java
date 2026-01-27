@@ -1,9 +1,5 @@
-package br.com.cbritodev.domain;
+package br.com.alexandrecamposcastro.domain;
 
-/**
- * @author carlos.brito
- * Criado em: 19/06/2025
- */
 public class Endereco {
     private String rua;
     private Integer numero;
